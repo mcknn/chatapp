@@ -1,0 +1,6 @@
+<!-- chat_content_partial.html -->
+<div id="chat-content">
+	{% for message in messages %}
+		<p><strong>{{ message.sender }}:  </strong>{{ message.content }}</p>
+	{% endfor %}
+</div>
